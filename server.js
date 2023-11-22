@@ -1,8 +1,12 @@
-const express = require('express')
-const app = express()
-const PORT = process.env.PORT || 5000
-app.get('/', (req, res) => {
-  res.send('Hello world')
-})
+const EventEmitter = require('events')
 
-app.listen(PORT, () => console.log(`Server listening ${PORT}`))
+const myEE = new EventEmitter()
+
+myEE.on('foo', () => {})
+myEE.on('bar', () => {})
+
+const sym = Symbol('symbol')
+
+myEE.on(sym, () => {})
+
+console.log(myEE.eventNames())
