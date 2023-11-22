@@ -1,12 +1,30 @@
-const EventEmitter = require('events')
+const { readFile } = require('fs')
 
-const myEE = new EventEmitter()
+const getText = (path) => {
+  return new Promise((resolve, reject) => {
+    readFile(path, 'utf-8', (err, data) => {
+      if (err) {
+        reject(err)
+      } else {
+        resolve(data)
+      }
+    })
+  })
+}
 
-myEE.on('foo', () => {})
-myEE.on('bar', () => {})
+const start = async () => {
+  try {
+    const first = await getText('./content/first.txt')
+    const second = await getText('./content/second.txt')
 
-const sym = Symbol('symbol')
+    console.log(first, second)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-myEE.on(sym, () => {})
+start()
 
-console.log(myEE.eventNames())
+// getText('./content/first.txt')
+//   .then((result) => console.log(result))
+//   .catch((err) => console.log(err))
