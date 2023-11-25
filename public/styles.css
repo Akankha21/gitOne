@@ -1,0 +1,29 @@
+.header {
+  background-color: aqua;
+  color: green;
+}
+
+.navbar {
+  display: flex;
+  background-color: green;
+  padding: 1rem;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main > * {
+  background-color: antiquewhite;
+  gap: 1rem;
+}
+
+.footer {
+  background: blue;
+}
