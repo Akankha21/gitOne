@@ -27,3 +27,7 @@ main > * {
 .footer {
   background: blue;
 }
+
+h1 {
+  color: green;
+}
