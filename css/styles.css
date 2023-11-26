@@ -31,3 +31,7 @@ main > * {
 h1 {
   color: green;
 }
+
+img {
+  width: 100%;
+}

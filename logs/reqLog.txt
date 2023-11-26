@@ -1,0 +1,9 @@
+20231126	09:26:57	9e99af9f-d02b-4e99-bbd1-0bd5a53c3430	/new-page	GET
+20231126	09:26:57	57d2c0f3-4517-4462-9a90-7d19d8dbc6d4	/css/styles.css	GET
+20231126	09:26:57	773cd683-a735-494e-8738-aa6171c0d17e	/img/pexels-alina-skazka-19225765.jpg	GET
+20231126	09:27:11	3834637d-319b-4abd-b3ac-7b355fb7aeb3	/new-page	GET
+20231126	09:27:11	f6f55282-98bf-4d49-a7bd-cbf596b63d32	/css/styles.css	GET
+20231126	09:27:11	8b39f2e1-7ad2-4e3e-bdac-7832518edfb0	/img/pexels-alina-skazka-19225765.jpg	GET
+20231126	09:27:34	797ae92f-2bad-461d-b777-d004e0e97e2b	/new-page	GET
+20231126	09:27:35	f393862d-ee3d-4124-be79-b6ce616c003a	/css/styles.css	GET
+20231126	09:27:35	1c518fbf-315f-4498-9e0b-5704b70c675f	/img/pexels-alina-skazka-19225765.jpg	GET
