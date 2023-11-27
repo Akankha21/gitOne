@@ -1,134 +1,40 @@
-const http = require('http')
+const exp = require('constants')
+const express = require('express')
 const path = require('path')
-const fs = require('fs')
-const fsPromises = require('fs').promises
+const cors = require('cors')
 
-const logEvents = require('./logEvents')
-const EventEmitter = require('events')
-class Emitter extends EventEmitter {}
-//initial object
-const myEmitter = new Emitter()
-myEmitter.on('log', (msg, fileName) => logEvents(msg, fileName))
+const { logger } = require('./middleware/logEvents')
+const errorHandler = require('./middleware/errorHandler')
+
+const app = express()
 
 const PORT = process.env.PORT || 5000
+//custom middleware logger
+app.use(logger)
+//Cors origin Resource Sharing
 
-const serveFile = async (filePath, contentType, response) => {
-  try {
-    const rawData = await fsPromises.readFile(
-      filePath,
-      !contentType.includes('image') ? 'utf-8' : ''
-    )
+const whiteList = ['https://www.google.com', 'http://localhost:5000']
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whiteList.indexOf(origin) !== -1 || !origin) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  },
 
-    const data =
-      contentType === 'application/json' ? JSON.parse(rawData) : rawData
-    response.writeHead(filePath.includes('404.html') ? 404 : 200, {
-      'Content-Type': contentType,
-    })
-    response.end(
-      contentType === 'application/json' ? JSON.stringify(data) : data
-    )
-  } catch (err) {
-    console.log(err)
-    myEmitter.emit('log', `${err.name}\t${err.message}`, 'errLog.txt')
-    response.statusCode = 500
-    response.end()
-  }
+  optionsSuccessStatus: 200,
 }
 
-const server = http.createServer((req, res) => {
-  myEmitter.emit('log', `${req.url}\t${req.method}`, 'reqLog.txt')
+app.use(cors(corsOptions))
 
-  let link
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+app.use('/', express.static(path.join(__dirname, 'public')))
+app.use('/subdir', express.static(path.join(__dirname, 'public')))
+app.use('/', require('./routes/root'))
+app.use('/subdir', require('./routes/subdir'))
 
-  const extension = path.extname(req.url)
+app.use(errorHandler)
 
-  let contentType
-
-  switch (extension) {
-    case '.css':
-      contentType = 'text/css'
-
-      break
-    case '.text/javascript':
-      contentType = 'text/javascript'
-
-      break
-    case '.json':
-      contentType = 'application/json'
-
-      break
-    case '.jpg':
-      contentType = 'image/jpeg'
-
-      break
-    case '.png':
-      contentType = 'image/png'
-
-      break
-    case '.txt':
-      contentType = 'text/plain'
-
-      break
-
-    default:
-      contentType = 'text/html'
-  }
-
-  let filePath =
-    contentType === 'text/html' && req.url === '/'
-      ? path.join(__dirname, 'views', 'index.html')
-      : contentType === 'text/html' && req.url.slice(-1) === '/'
-      ? path.join(__dirname, 'views', req.url, 'index.html')
-      : contentType === 'text/html'
-      ? path.join(__dirname, 'views', req.url)
-      : path.join(__dirname, req.url)
-
-  // makes .html extension not required in the browser
-
-  if (!extension && req.url.slice(-1) !== '/') filePath += '.html'
-
-  const fileExists = fs.existsSync(filePath)
-
-  if (fileExists) {
-    //serve the file
-
-    serveFile(filePath, contentType, res)
-  } else {
-    switch (path.parse(filePath).base) {
-      case 'old-page.html':
-        res.writeHead(301, { location: '/new-page.html' })
-        res.end()
-        break
-      case 'www-page.html':
-        res.writeHead(301, { location: '/' })
-        res.end()
-        break
-      default:
-        //server 404
-
-        serveFile(path.join(__dirname, 'views', '404.html'), 'text/html', res)
-    }
-
-    console.log(path.parse(filePath))
-  }
-
-  // res.statusCode = 200
-  // res.setHeader('content-Type', 'text/html')
-  // link = path.join(__dirname, 'views', 'index.html')
-
-  // const stream = fs.createReadStream(link)
-
-  // stream.on('open', () => {
-  //   stream.pipe(res)
-  // })
-  // stream.on('error', (err) => {
-  //   res.end(err)
-  // })
-
-  // fs.readFile(link, 'utf8', (err, data) => {
-  //   console.log(err)
-  //   res.end(data)
-  // })
-})
-
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`))

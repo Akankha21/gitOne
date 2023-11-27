@@ -1,9 +1,57 @@
-20231126	09:26:57	9e99af9f-d02b-4e99-bbd1-0bd5a53c3430	/new-page	GET
-20231126	09:26:57	57d2c0f3-4517-4462-9a90-7d19d8dbc6d4	/css/styles.css	GET
-20231126	09:26:57	773cd683-a735-494e-8738-aa6171c0d17e	/img/pexels-alina-skazka-19225765.jpg	GET
-20231126	09:27:11	3834637d-319b-4abd-b3ac-7b355fb7aeb3	/new-page	GET
-20231126	09:27:11	f6f55282-98bf-4d49-a7bd-cbf596b63d32	/css/styles.css	GET
-20231126	09:27:11	8b39f2e1-7ad2-4e3e-bdac-7832518edfb0	/img/pexels-alina-skazka-19225765.jpg	GET
-20231126	09:27:34	797ae92f-2bad-461d-b777-d004e0e97e2b	/new-page	GET
-20231126	09:27:35	f393862d-ee3d-4124-be79-b6ce616c003a	/css/styles.css	GET
-20231126	09:27:35	1c518fbf-315f-4498-9e0b-5704b70c675f	/img/pexels-alina-skazka-19225765.jpg	GET
+20231127	08:32:45	8eb4954e-9da2-4335-b325-bd68a326d456	GET	undefined	/
+20231127	08:32:45	84cf3e72-d804-4aef-bf2d-e5574cac5a41	GET	undefined	/css/styles.css
+20231127	08:39:40	90102421-9973-402f-a655-5974c3978034	GET	undefined	/
+20231127	08:39:40	4b7b1ebd-de6a-475f-b882-bf86ba8c154e	GET	undefined	/css/styles.css
+20231127	08:41:34	9242c115-a6c8-4436-95d5-f3bf71e9e85e	GET	undefined	/
+20231127	08:41:48	ca364c4b-bdbc-4076-b68b-4eb936168e0b	GET	undefined	/
+20231127	08:41:48	d0e95692-f22e-44d3-8c05-540bb51a5ddd	GET	undefined	/css/styles.css
+20231127	08:45:23	0c246836-e85a-435b-8aaf-c959cd017991	GET	undefined	/
+20231127	08:45:23	aeda24b0-e6cc-429f-8230-d6af351f2dac	GET	undefined	/css/styles.css
+20231127	08:50:31	12475c54-6cca-4272-b748-9d154bf3f192	GET	undefined	/
+20231127	11:37:54	3c9664af-dfe6-4444-a27b-24235f8ee157	GET	undefined	/
+20231127	11:41:15	16de063f-93af-47eb-a2d4-fd011c14491c	GET	undefined	/
+20231127	11:44:30	917f3ddb-2e71-4c93-96ef-b67f1e9e3650	GET	undefined	/
+20231127	11:47:33	a5dab97b-2802-48e0-8811-f215d74a19d4	OPTIONS	https://www.google.com	/
+20231127	11:47:33	b55bbf30-c28c-43bd-8b80-4f5a7d8feea3	GET	https://www.google.com	/
+20231127	11:48:08	ddca634f-3d8e-4ae5-9fc0-c328d468f6ee	OPTIONS	https://www.google.com	/
+20231127	11:48:08	b52c6467-51c4-4b95-9e44-089b2e4d9307	GET	https://www.google.com	/
+20231127	11:48:44	67b7e790-8327-44b8-a5a8-b3c44b09d697	OPTIONS	https://www.google.com	/
+20231127	11:48:44	ca4d6d71-f7a5-4027-bb4e-965f5e32834b	GET	https://www.google.com	/
+20231127	11:49:21	64ae5c6a-9708-4703-8a50-8e995ea164cc	GET	undefined	/
+20231127	11:49:53	27ad376d-7ef2-4c9b-8475-917a3c9d0cd6	GET	undefined	/
+20231127	11:50:29	e10a70f7-3d7c-42f8-b1ec-cebcd580021b	GET	undefined	/
+20231127	11:50:43	a96c3749-44bc-47d2-9606-91219260eb08	GET	undefined	/
+20231127	11:50:46	97dfe062-5256-48a7-ab4e-636c0e56a5ab	GET	undefined	/
+20231127	11:55:33	7f74632e-8df3-4b5e-835a-023900ad56bf	GET	undefined	/
+20231127	11:55:34	b14f363f-b16f-44cd-b26a-65374f6e7e8a	GET	undefined	/css/styles.css
+20231127	11:55:34	bcb9da53-7205-4c08-87db-63e4cf7af379	GET	undefined	/favicon.ico
+20231127	12:03:44	92a3f65a-699e-4fce-9bab-8362ed3c50e8	GET	undefined	/
+20231127	12:03:44	517933f4-214b-41e1-8db8-bc8d0aaa4237	GET	undefined	/favicon.ico
+20231127	12:05:47	dd5faeb2-2a4d-44b1-a964-dc2244296b74	GET	undefined	/
+20231127	12:05:47	40f28a39-4d10-4723-b09e-e330ea77c7ac	GET	undefined	/css/styles.css
+20231127	12:05:47	bcb5eb92-83fe-445e-8837-da79f336f535	GET	undefined	/favicon.ico
+20231127	12:07:44	ac988de8-ee3e-4f1d-9219-08da3d0a9ea7	GET	undefined	/oop
+20231127	12:07:44	b5cd298e-034a-4c26-aa69-e5bc81f6abe9	GET	undefined	/css/styles.css
+20231127	13:05:12	850ac36e-46f4-44b2-8c95-320417911501	GET	undefined	/subdir
+20231127	13:05:12	20ee429c-b4d4-400c-b4cc-dd72a3283ee5	GET	undefined	/gitone/css/styles.css
+20231127	13:05:37	58507e46-e5fa-47ef-8533-844d7783b32c	GET	undefined	/subdir/test
+20231127	13:06:03	297ac8e9-482d-4d6e-841d-a09356d68a29	GET	undefined	/subdir/test
+20231127	13:08:29	dae40dfd-81f6-45df-bc8e-752d3c37ee3e	GET	undefined	/subdir
+20231127	13:08:29	b747ae0b-e4b2-4c5b-9fb4-9820f2d459da	GET	undefined	/subdir/
+20231127	13:08:29	7e1de35c-48e9-4509-a38e-178e0a42ff76	GET	undefined	/css/styles.css
+20231127	13:09:34	3201466b-ddfc-4ff6-8b46-7cf096dce39e	GET	undefined	/new-page.html
+20231127	13:09:34	bba48ae5-554a-4a04-b614-8e92c38cb8e0	GET	undefined	/css/styles.css
+20231127	13:09:35	95f446a2-6ed0-46d9-ae05-6d4bb2fc0525	GET	undefined	/img/pexels-alina-skazka-19225765.jpg
+20231127	13:37:34	a9ec94ef-53d9-4c93-a513-82c7e39c20a7	GET	undefined	/
+20231127	13:37:52	d71c07ab-8ac9-4b5c-adff-ede4da4d99b5	GET	undefined	/new-page.html
+20231127	13:37:53	46c09f49-c6c0-45ff-92dc-68c1beb8d389	GET	undefined	/css/styles.css
+20231127	13:37:53	5af064b5-156b-4645-b3ed-42135856d5be	GET	undefined	/img/pexels-alina-skazka-19225765.jpg
+20231127	13:38:51	14e2ed5b-f131-43b9-ad11-4cb36463d076	GET	undefined	/new-page.h
+20231127	13:41:05	bd5031ce-bb83-499a-9c7b-47e153bedb4f	GET	undefined	/
+20231127	13:41:23	b11c7664-18b1-483b-8b58-7b2b4245f413	GET	undefined	/
+20231127	13:42:23	f69cbe12-3ddf-42e8-98c1-0a0b8f678ffa	GET	undefined	/
+20231127	13:45:30	23464371-5020-4a44-a531-bfeae75eef11	GET	undefined	/
+20231127	13:45:31	f3ce3417-4d31-4d7e-85bf-32ec8cc3ab31	GET	undefined	/css/styles.css
+20231127	13:45:53	9fd72f4b-8833-489b-ada3-bec42329ca57	GET	undefined	/new-page.html
+20231127	13:45:53	1bd9ede7-7b27-47b3-8fd9-6f76107d1a5d	GET	undefined	/img/pexels-alina-skazka-19225765.jpg
+20231127	13:45:53	a327d9aa-57ff-4884-93ba-d0c56b01f471	GET	undefined	/css/styles.css
