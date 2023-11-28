@@ -2,3 +2,4 @@
 20231127	12:03:44	589b6139-bc65-4f7d-9610-c33d83f764be	Error: Not allowed by CORS
 20231127	13:41:23	910f73c0-cf8f-4f04-8928-0566e79f547b	Error: ENOENT: no such file or directory, stat 'C:\Users\user\OneDrive\Desktop\none\gitone\routes\views\index.html'
 20231127	13:42:23	fe5c640f-09dd-400d-a763-121e002ba89a	Error: ENOENT: no such file or directory, stat 'C:\Users\user\OneDrive\Desktop\none\gitone\routes\views\index.html'
+20231127	13:51:02	8d80f4a3-9b5f-45d2-8618-eff5fdc9c068	TypeError: path must be absolute or specify root to res.sendFile
